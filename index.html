@@ -1,0 +1,72 @@
+<!DOCTYPE html5>
+<html>
+<head>
+	<title>Chinese Social Credit Test 中国社会信用测试</title>
+	<script src="xinyong.js"></script>
+	<meta name="title" content="Chinese Social Credit Test 中国社会信用测试">
+	<meta name="description" content="Take the social credit test today to prove you are a worthy citizen of China! 今天就参加社会信用测试，证明你是一个合格的中国公民！">
+  
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://cirnoslab.me/socialcredits">
+	<meta property="og:title" content="Chinese Social Credit Test 中国社会信用测试">
+	<meta property="og:description" content="Take the social credit test today to prove you are a worthy citizen of China! 今天就参加社会信用测试，证明你是一个合格的中国公民！">
+	<meta property="og:image" content="https://cirnoslab.me/socialcredits/assets/chineseFlag.webp">
+  
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://cirnoslab.me/socialcredits">
+	<meta property="twitter:title" content="Chinese Social Credit Test 中国社会信用测试">
+	<meta property="twitter:description" content="Take the social credit test today to prove you are a worthy citizen of China! 今天就参加社会信用测试，证明你是一个合格的中国公民！">
+	<meta property="twitter:image" content="https://cirnoslab.me/socialcredits/assets/chineseFlag.webp">
+	<link rel="stylesheet" href="xinyong.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<div id="title" class="impact screen">
+		<center>
+			<div style="margin-bottom: 1em">CHINESE SOCIAL CREDIT TEST</div>
+			<button class="titleButton" onclick="startTest()">START</button>
+		</center>
+	</div>
+	<div id="question" class="impact screen hidden">
+		<center>
+			<div id="questionText" style="margin-bottom: 0.5em">1. QUESTION</div>
+			<div id="tophalf">
+				<button id="answer0" class="answerButton leftButtons" onclick="submit(0)">nothing</button>
+				<button id="answer1" class="answerButton rightButtons" onclick="submit(1)">the massacre</button>
+			</div>
+			<div id="bottomhalf">
+				<button id="answer2" class="answerButton leftButtons" onclick="submit(2)">deatg</button>
+				<button id="answer3" class="answerButton rightButtons" onclick="submit(3)">Ddsdasdasd</button>
+			</div>
+		</center>
+	</div>
+	<div id="congrats" class="impact screen hidden">
+		<center>
+			<div style="margin-bottom: 0.5em">+15 SOCIAL CREDIT!</div>
+			<img class="image" src="assets/thumbsUp.png">
+			<img class="image" id="midQuestion">
+		</center>
+	</div>
+	<div id="oops" class="impact screen hidden">
+		<center>
+			<div style="margin-bottom: 0.5em">-100000 SOCIAL CREDIT!</div>
+			<img class="image" src="assets/thumbsDown.png">
+			<img class="image" id="midQuestion2">
+		</center>
+	</div>
+	<div id="goodEnding" class="impact screen hidden">
+		<center>
+			<div>CONGRATULATIONS!</div>
+			<img class="image" id="goodEnd">
+			<div>GLORY TO THE CCP!</div>
+		</center>
+	</div>
+	<div id="badEnding" class="impact screen hidden">
+		<center>
+			<div>YOUR EXECUTION DATE IS ON</div>
+			<img class="image" id="badEnd">
+			<div id="executionDate">25TH NOVEMBER 2021, 5:00PM</div>
+		</center>
+	</div>
+</body>
+</html>

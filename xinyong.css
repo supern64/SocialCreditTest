@@ -1,0 +1,72 @@
+@font-face {
+  font-family: Impact;
+  src: url("assets/impact.ttf");
+}
+
+body {
+	user-select: none;
+	margin: 0;
+}
+.impact {
+	font-family: Impact;
+	font-size: 5em;
+	color: white;
+	-webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+}
+.titleButton {
+	width: 15em;
+	height: 7em;
+	font-size:  50px;
+}
+.answerButton {
+	width: 7em;
+	height: 5em;
+	font-size:  30px;
+}
+.leftButtons {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+.rightButtons {
+	margin-left:  5em;
+	margin-right: 1em;
+}
+#tophalf {
+	margin-bottom: 1em;
+	position: relative;
+}
+#bottomhalf {
+	position: relative;
+}
+#congrats, #goodEnding {
+	background-color: #10ff10;
+}
+#oops, #badEnding {
+	background-color: #ff1010;
+}
+.screen {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	border: 0;
+	background-repeat: no-repeat;
+	background-size:  cover;
+}
+.buddy {
+	width: 1em;
+	height: 1em;
+	position: absolute;
+	top:  0;
+	bottom: 0;
+	margin: auto;
+}
+.image {
+	height: 70%;
+}
+.hidden {
+	display: none;
+}
+#title {
+	background-image: url("assets/chineseFlag.webp");
+}
