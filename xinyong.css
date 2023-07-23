@@ -52,6 +52,7 @@ body {
 	border: 0;
 	background-repeat: no-repeat;
 	background-size:  cover;
+	overflow-y: hidden;
 }
 .buddy {
 	width: 1em;

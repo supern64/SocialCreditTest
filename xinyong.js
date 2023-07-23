@@ -14,7 +14,7 @@ const questions = [
 	},
 	{
 		"question": "Do you consent to have your town used as a nuclear testing site?",
-		"options": ["Yes", "No", "None of the above", "All of the above"],
+		"options": ["Yes", "No"],
 		"answer": 0
 	}
 ]
@@ -36,12 +36,21 @@ function runQuestion() {
 		var question = questions[questionIndex];
 		var questionEl = document.getElementById("questionText");
 		questionEl.innerText = (questionIndex + 1) + ". " + question.question;
-		for (answer in question.options) {
-			document.getElementById("answer" + answer).innerText = question.options[answer];
+		for (let answer = 0; answer < 4; answer++) {
+			if (question.options[answer]) {
+				loadButton("answer" + answer);
+				document.getElementById("answer" + answer).innerText = question.options[answer];
+			} else {
+				unloadScreen("answer" + answer);
+			}
+			
 		}
 	}
 }
 
+function loadButton(name) {
+	document.getElementById(name).style.display = "default";
+}
 function loadScreen(name) {
 	document.getElementById(name).style.display = "inherit";
 }
