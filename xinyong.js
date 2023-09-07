@@ -149,9 +149,9 @@ function endQuiz(result) {
 		loadRandomImage("badEnd");
 		var executionDate = document.getElementById("executionDate");
 		var currentDate = new Date();
-		currentDate.setTime(currentDate.getTime() + 30*24*60*60); // + 30 days from now
-		var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "November", "December"]
-		var dateString = ordinal(currentDate.getDate()) + " " + months[currentDate.getMonth()] + " " + currentDate.getFullYear() + ", 5:00PM"
+		currentDate.setTime(currentDate.getTime() + 30*24*60*60*1000); // + 30 days from now
+		var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+		var dateString = ordinal(currentDate.getDate()) + " " + months[currentDate.getMonth() - 1] + " " + currentDate.getFullYear() + ", 5:00PM"
 		executionDate.innerText = dateString.toUpperCase();
 
 		loadScreen("badEnding");
